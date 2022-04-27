@@ -3,12 +3,7 @@ import Card from './Card.js';
 
 function CardList({ robots }) {
   return robots.map((user, i) => (
-    <Card
-      key={i}
-      id={robots[i].id}
-      name={robots[i].name}
-      email={robots[i].email}
-    />
+    <Card key={i} id={user.id} name={user.name} email={user.email} />
   ));
 }
 
